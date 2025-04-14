@@ -1,3 +1,94 @@
+libssh2 (1.11.1-1) unstable; urgency=medium
+
+  [ Nicolas Mora ]
+  * New upstream release
+  * d/libssh2-1t64.symbols: Add new symbols
+  * d/libssh2-1t64.lintian-overrides remove override file
+  * d/patches: Disable all patches but
+    0001-Add-lgpg-error-to-.pc-to-facilitate-static-linking.patch
+    which is refreshed
+  * d/tests: Add test to check that 'pkg-config --libs libssh2'
+    does not return private libs
+
+  [ Simon Josefsson ]
+  * d/control: Drop unnecessary chrpath
+  * d/tests/control: Drop unnecessary chrpath
+
+ -- Nicolas Mora <babelouest@debian.org>  Wed, 16 Oct 2024 07:36:53 -0400
+
+libssh2 (1.11.0-7) unstable; urgency=medium
+
+  * d/patches: openssh-9.8.patch
+    Disable DSA by default (closes: #1077735)
+
+ -- Nicolas Mora <babelouest@debian.org>  Fri, 02 Aug 2024 13:32:00 -0400
+
+libssh2 (1.11.0-6) unstable; urgency=medium
+
+  * d/patches: Add maxpathlen.patch (Closes: #1068076)
+
+ -- Nicolas Mora <babelouest@debian.org>  Thu, 04 Jul 2024 07:41:06 -0400
+
+libssh2 (1.11.0-5) unstable; urgency=medium
+
+  * Mark builddep openssh-server with <!nocheck> (Closes: #1066111)
+  * d/copyright add missing license and author in src/bcrypt_pbkdf.c
+    and add missing author in src/blowfish.c (Closes: #1071566)
+  * d/control: upgrade standards version to 4.7.0
+  * d/patches: Add mention Forwarded to patches
+
+ -- Nicolas Mora <babelouest@debian.org>  Thu, 25 Apr 2024 07:35:58 -0400
+
+libssh2 (1.11.0-4.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Rename libraries for 64-bit time_t transition.  Closes: #1062637
+
+ -- Graham Inggs <ginggs@debian.org>  Wed, 28 Feb 2024 19:03:07 +0000
+
+libssh2 (1.11.0-4) unstable; urgency=medium
+
+  * d/patch: Add patch for Terrapin attack
+    Fixes CVE-2023-48795 (Closes: #1059005)
+  * d/copyright: Update copyright years
+
+ -- Nicolas Mora <babelouest@debian.org>  Tue, 19 Dec 2023 17:33:18 -0500
+
+libssh2 (1.11.0-3) unstable; urgency=medium
+
+  * d/patch: Backport PR-1241 from upstream (Closes: #1056348)
+
+ -- Nicolas Mora <babelouest@debian.org>  Tue, 28 Nov 2023 13:12:56 -0500
+
+libssh2 (1.11.0-2) unstable; urgency=medium
+
+  * upload to unstable
+  * d/patch: re-enable sshd tests (Thanks Paul Howarth)
+
+ -- Nicolas Mora <babelouest@debian.org>  Fri, 09 Jun 2023 07:36:08 -0400
+
+libssh2 (1.11.0-1) experimental; urgency=medium
+
+  * New upstream release
+  * d/watch: Add gpg signature verification
+  * d/control: upgrade standards version to 4.6.2
+  * d/patches: remove ssh2-sh.patch
+  * d/patches: Update manpage.patch
+  * d/symbols: Update symbols
+  * d/tests: update unit-tests
+  * d/gitlab-ci.yml: Add salsa CI/CD script
+
+ -- Nicolas Mora <babelouest@debian.org>  Wed, 31 May 2023 10:00:05 -0400
+
+libssh2 (1.10.0-3) unstable; urgency=medium
+
+  * d/patches: Fix ssh2.sh test (Closes: #1006379)
+  * d/control: Add openssh-server in Build-Depends
+  * d/tests/control: Add openssh-server in Depends
+  * d/copyright: Update copyright years
+
+ -- Nicolas Mora <babelouest@debian.org>  Tue, 01 Mar 2022 19:23:12 -0500
+
 libssh2 (1.10.0-2) unstable; urgency=medium
 
   * Upload to unstable
