@@ -6,3 +6,4 @@
 #CVE-2023-48795.patch
 #maxpathlen.patch
 #openssh-9.8.patch
+CVE-2026-7598.patch
