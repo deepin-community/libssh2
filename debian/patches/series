@@ -8,3 +8,4 @@
 #openssh-9.8.patch
 CVE-2026-7598.patch
 CVE-2025-15661.patch
+CVE-2026-55199.patch

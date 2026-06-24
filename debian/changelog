@@ -1,3 +1,10 @@
+libssh2 (1.11.1-1deepin4) unstable; urgency=medium
+
+  * Fix CVE-2026-55199: pre-authentication DoS via SSH_MSG_EXT_INFO handler
+    (upstream commit 17626857d20b3c9a1addfa45979dadcee1cd84a4)
+
+ -- deepin-ci-robot <packages@deepin.org>  Wed, 24 Jun 2026 19:30:00 +0800
+
 libssh2 (1.11.1-1deepin3) unstable; urgency=medium
 
   * Fix CVE-2025-15661: heap buffer over-read in sftp_symlink
