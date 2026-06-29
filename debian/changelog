@@ -1,15 +1,9 @@
-libssh2 (1.11.1-1deepin2) unstable; urgency=medium
+libssh2 (1.11.1-1+deb13u1) trixie-security; urgency=medium
 
-  * Fix CVE-2026-7598: integer overflow in userauth_password
-    (upstream commit 256d04b60d80bf1190e96b0ad1e91b2174d744b1)
+  * CVE-2026-7598 (Closes: #1135647)
+  * CVE-2025-15661 / CVE-2026-55199 / CVE-2026-55200 (Closes: #1140401)
 
- -- deepin-ci-robot <packages@deepin.org>  Thu, 04 Jun 2026 09:00:00 +0800
-
-libssh2 (1.11.1-1deepin1) unstable; urgency=medium
-
-  * revert t64.
-
- -- lichenggang <lichenggang@deepin.org>  Mon, 14 Apr 2025 17:53:34 +0800
+ -- Moritz Mühlenhoff <jmm@debian.org>  Tue, 23 Jun 2026 23:01:56 +0200
 
 libssh2 (1.11.1-1) unstable; urgency=medium
 
