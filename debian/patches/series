@@ -6,4 +6,8 @@
 #CVE-2023-48795.patch
 #maxpathlen.patch
 #openssh-9.8.patch
+CVE-2025-15661.patch
 CVE-2026-7598.patch
+CVE-2026-55199.patch
+CVE-2026-55200.patch
+libssh-unconst-backport.patch
