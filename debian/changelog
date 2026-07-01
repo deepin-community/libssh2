@@ -1,3 +1,12 @@
+libssh2 (1.11.1-1deepin3) unstable; urgency=medium
+
+  * Fix CVE-2026-58051: fix potential arbitrary free in
+    libssh2_publickey_list_fetch() due to uninitialized list entry after
+    SSH2_REALLOC (upstream commit
+    a9758da45a52bc8c630ec9493804d0c6ea30b24a)
+
+ -- deepin-ci-robot <packages@deepin.org>  Wed, 01 Jul 2026 13:40:18 +0800
+
 libssh2 (1.11.1-1deepin2) unstable; urgency=medium
 
   * Fix CVE-2026-7598: integer overflow in userauth_password
