@@ -11,3 +11,5 @@ CVE-2026-7598.patch
 CVE-2026-55199.patch
 CVE-2026-55200.patch
 libssh-unconst-backport.patch
+CVE-2026-58050.patch
+CVE-2026-58051.patch
