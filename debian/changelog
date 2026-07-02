@@ -1,3 +1,12 @@
+libssh2 (1.11.1-1+deb13u1deepin2) unstable; urgency=medium
+
+  * CVE-2026-58050: Fix publickey list fetch attribute overflow
+    Cap list size at 1024 elements to prevent integer overflow.
+  * CVE-2026-58051: Fix publickey list fetch uninitialized entry
+    Zero-initialize new list entry after SSH2_REALLOC.
+
+ -- deepin-ci-robot <packages@deepin.org>  Wed, 01 Jul 2026 16:40:00 +0800
+
 libssh2 (1.11.1-1+deb13u1deepin1) unstable; urgency=medium
 
   * revert t64.
