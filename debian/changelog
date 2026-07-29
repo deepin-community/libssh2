@@ -1,3 +1,12 @@
+libssh2 (1.11.1-1+deb13u1deepin3) unstable; urgency=medium
+
+  * CVE-2026-66032: Fix dangling pointer by nullifying data
+  * CVE-2026-66033: Fix potential OOB read/write with AES-GCM in ssh2_cipher_crypt
+  * CVE-2026-66034: Fix potential OOB read in libssh2_publickey_list_fetch
+  * CVE-2026-66035: Fix potential heap overflow on ETM decrypt
+
+ -- deepin-ci-robot <packages@deepin.org>  Wed, 29 Jul 2026 10:27:31 +0800
+
 libssh2 (1.11.1-1+deb13u1deepin2) unstable; urgency=medium
 
   * CVE-2026-58050: Fix publickey list fetch attribute overflow
