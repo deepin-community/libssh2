@@ -1,3 +1,9 @@
+libssh2 (1.11.1-1+deb13u1deepin4) unstable; urgency=medium
+
+  * Rebuild with LTO enabled (dpkg vendor feature optimize/lto).
+
+ -- tunaichao <tunaichao@uniontech.com>  Thu, 10 Sep 2026 19:04:50 +0800
+
 libssh2 (1.11.1-1+deb13u1deepin3) unstable; urgency=medium
 
   * CVE-2026-66032: Fix dangling pointer by nullifying data
